@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zags Grow Through Sports · Gonzaga University</title>
+<title>Zags Grow Through Sports (Draft Proposal) · Gonzaga University</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -186,13 +186,26 @@
   }
   .scroll-hint.light { color: white; }
   @keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+  /* Draft + authorship. Deliberately prominent: a Gonzaga-branded deck about a "university-wide
+     initiative" with no author on it reads as settled policy rather than one person's proposal. */
+  .draft-block{ border-left:3px solid #fff; padding:.9rem 0 .9rem 1.1rem; max-width:640px; }
+  .draft-badge{ display:inline-block; background:#fff; color:#041E42; font-weight:800;
+    font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; padding:.3rem .7rem;
+    border-radius:3px; margin-bottom:.7rem; }
+  .draft-by{ color:#fff; font-size:.95rem; line-height:1.6; margin:0 0 .4rem; }
+  .draft-by strong{ color:#fff; }
+  .draft-note{ color:rgba(255,255,255,.72); font-size:.85rem; line-height:1.6; margin:0; }
+  .hdr-draft{ display:inline-block; margin-left:.5rem; padding:.1rem .45rem; border-radius:3px;
+    background:rgba(200,16,46,.9); color:#fff; font-size:.6rem; font-weight:800;
+    letter-spacing:.1em; text-transform:uppercase; vertical-align:middle; }
 </style>
 </head>
 <body>
 
 <!-- Fixed nav — 10 dots -->
 <nav>
-  <div class="nav-logo">Gonzaga University <span>Zags Grow Through Sports</span></div>
+  <div class="nav-logo">Gonzaga University <span>Zags Grow Through Sports</span> <span class="hdr-draft">Draft proposal</span></div>
   <div class="nav-dots">
     <div class="nav-dot active" onclick="goTo('s1')"></div>
     <div class="nav-dot" onclick="goTo('s2')"></div>
@@ -212,8 +225,14 @@
   <div class="slide-inner">
     <div class="eyebrow light">Gonzaga University · 2026</div>
     <div class="display xl white">Zags Grow<br>Through <em>Sports</em></div>
-    <p class="lead light" style="margin-bottom:2rem;">A university-wide initiative connecting sports identity to academic engagement, professional formation, and Jesuit mission — across every school and every major, for the students who carry one.</p>
-    <span class="p-tag white-tag">Strategic Initiative</span>
+    <p class="lead light" style="margin-bottom:1.6rem;">A proposed university-wide initiative connecting sports identity to academic engagement, professional formation, and Jesuit mission — across every school and every major, for the students who carry one.</p>
+    <div class="draft-block">
+      <span class="draft-badge">Draft proposal</span>
+      <p class="draft-by">Developed by <strong>John Correia</strong>, Associate Professor of Management
+        Information Systems, School of Business Administration.</p>
+      <p class="draft-note">This is a working proposal for discussion. It is not approved
+        university policy and does not represent an institutional commitment.</p>
+    </div>
   </div>
   <div class="scroll-hint light">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
