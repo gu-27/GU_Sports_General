@@ -188,18 +188,20 @@
   .scroll-hint.light { color: white; }
   @keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
 
-  /* Draft + authorship. Deliberately prominent: a Gonzaga-branded deck about a "university-wide
-     initiative" with no author on it reads as settled policy rather than one person's proposal. */
-  .draft-block{ border-left:3px solid #fff; padding:.9rem 0 .9rem 1.1rem; max-width:640px; }
-  .draft-badge{ display:inline-block; background:#fff; color:#041E42; font-weight:800;
-    font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; padding:.3rem .7rem;
-    border-radius:3px; margin-bottom:.7rem; }
-  .draft-by{ color:#fff; font-size:.95rem; line-height:1.6; margin:0 0 .4rem; }
-  .draft-by strong{ color:#fff; }
-  .draft-note{ color:rgba(255,255,255,.72); font-size:.85rem; line-height:1.6; margin:0; }
   .hdr-draft{ display:inline-block; margin-left:.5rem; padding:.1rem .45rem; border-radius:3px;
     background:rgba(200,16,46,.9); color:#fff; font-size:.6rem; font-weight:800;
     letter-spacing:.1em; text-transform:uppercase; vertical-align:middle; }
+
+  /* Draft + authorship card. Solid red with white text so it cannot inherit a slide's colour:
+     the previous version rendered black-on-blue on one page and navy-on-dark on another.
+     White on #C8102E is 5.88:1; the badge reverses to the same. */
+  .draft-block{ background:#C8102E; color:#fff; border:0; border-radius:6px;
+    padding:1rem 1.2rem 1.05rem; max-width:640px; margin:1.4rem 0 0; text-align:left; }
+  .draft-badge{ display:inline-block; background:#fff; color:#C8102E; font-weight:800; font-size:.68rem;
+    letter-spacing:.14em; text-transform:uppercase; padding:.3rem .7rem; border-radius:3px; margin-bottom:.65rem; }
+  .draft-block .draft-by{ color:#fff; font-size:.94rem; line-height:1.6; margin:0 0 .35rem; }
+  .draft-block .draft-by strong{ color:#fff; }
+  .draft-block .draft-note{ color:rgba(255,255,255,.88); font-size:.85rem; line-height:1.6; margin:0; }
 </style>
 </head>
 <body>
